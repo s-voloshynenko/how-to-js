@@ -1,0 +1,95 @@
+#tree-container
+  padding-top: 20px
+
+  & .facets-containter
+    margin-bottom: 20px
+    min-height: 100px
+
+    &.lvl-1 .facet
+      background-color: $yellow-500
+
+    &.lvl-2 .facet
+      background-color: $deep-orange-400
+      box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $deep-orange-700
+
+      &:hover
+       box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $deep-orange-700
+
+      &:active
+       box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $deep-orange-700
+
+      & .facet-name
+        color: $black
+
+      & .facet-keywords
+        color: $white
+
+    &.lvl-3 .facet
+      height: 50px
+      background-color: $light-green-600
+      box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $light-green-900
+
+      &:hover
+       box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $light-green-900
+
+      &:active
+       box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $light-green-900
+
+      & .facet-name
+        height: 50px
+        font-family: 'Bungee Shade', cursive
+        font-size: 18px
+        font-weight: normal
+        text-align: center
+        line-height: 50px
+        color: $black
+        font-family: 'Black Ops One', cursive
+
+      & .facet-keywords
+        display: none
+
+    & .facet
+      display: inline-block
+      position: relative
+      height: 100px
+      width: 200px
+      color: $black
+      background-color: $yellow-500
+      box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $yellow-800
+      cursor: pointer
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 10px
+
+      &:hover
+       box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $yellow-800
+       transform: translateY(2px)
+
+      &:active
+       box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $yellow-800
+       transform: translateY(5px)
+
+      & .facet-name
+        display: block
+        height: 100px
+        font-family: 'Bungee Shade', cursive
+        font-size: 30px
+        font-weight: 800
+        text-align: center
+        line-height: 100px
+        color: $red-600
+
+      & .facet-keywords
+        position: absolute
+        bottom: 2px
+        padding-left: 2px
+        font-family: 'Black Ops One', cursive
+        font-size: 12px
+        color: $grey-600
+
+      & .facet-keyword:first-of-type
+        margin-left: 5px
+
+      & .facet-keyword
+        margin-right: 5px
+        text-shadow: 0px 1px 0px rgba(150, 150, 150, 1)
