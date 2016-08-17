@@ -1,52 +1,75 @@
-#tree-container
-  padding-top: 20px
+.horizontal-row
+  heigh: auto
+  min-height: 100%
+  overflow-x: scroll
 
   & .facets-containter
-    margin-bottom: 20px
+    position: absolute;
     min-height: 100px
 
-    &.lvl-1 .facet
-      background-color: $yellow-500
+    &.lvl-1
+      top: 50%
+      left: 20px
+      transform: translate(0, -50%)
 
-    &.lvl-2 .facet
-      background-color: $deep-orange-400
-      box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $deep-orange-700
+      & .facet
+        background-color: $yellow-500
 
-      &:hover
-       box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $deep-orange-700
+    &.lvl-2
+      top: 50%
+      transform: translate(0, -50%)
+      left: 220px;
 
-      &:active
-       box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $deep-orange-700
+      & .facet
+        background-color: $deep-orange-400
+        box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $deep-orange-700
 
-      & .facet-name
-        color: $black
+        &:hover
+         box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $deep-orange-700
 
-      & .facet-keywords
-        color: $white
+        &:active
+         box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $deep-orange-700
 
-    &.lvl-3 .facet
-      height: 50px
-      background-color: $light-green-600
-      box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $light-green-900
+        & .facet-name
+          color: $black
 
-      &:hover
-       box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $light-green-900
+        & .facet-keywords
+          color: $white
 
-      &:active
-       box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $light-green-900
+    &.lvl-3
+      left: 820px;
 
-      & .facet-name
+      &.lvl-client
+        top: 10%
+        transform: translate(0, -10%)
+
+      &.lvl-server
+        top: 90%
+        transform: translate(0, -90%)
+
+      & .facet
         height: 50px
-        font-family: 'Bungee Shade', cursive
-        font-size: 18px
-        font-weight: normal
-        text-align: center
-        line-height: 50px
-        color: $black
-        font-family: 'Black Ops One', cursive
+        background-color: $light-green-600
+        box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $light-green-900
 
-      & .facet-keywords
-        display: none
+        &:hover
+         box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $light-green-900
+
+        &:active
+         box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $light-green-900
+
+        & .facet-name
+          height: 50px
+          font-family: 'Bungee Shade', cursive
+          font-size: 18px
+          font-weight: normal
+          text-align: center
+          line-height: 50px
+          color: $black
+          font-family: 'Black Ops One', cursive
+
+        & .facet-keywords
+          display: none
 
     & .facet
       display: inline-block
