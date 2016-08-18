@@ -1,7 +1,6 @@
 .horizontal-row
-  heigh: auto
+  height: auto
   min-height: 100%
-  overflow-x: scroll
 
   & .facets-containter
     position: absolute;
@@ -19,13 +18,14 @@
       top: 50%
       transform: translate(0, -50%)
       left: 220px;
+      min-width: 600px
 
       & .facet
         background-color: $deep-orange-400
-        box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $deep-orange-700
+        box-shadow: inset 0px 0px 0px , 0px 10px 0px 0px $deep-orange-700
 
         &:hover
-         box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $deep-orange-700
+         box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $deep-orange-700
 
         &:active
          box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $deep-orange-700
@@ -50,10 +50,10 @@
       & .facet
         height: 50px
         background-color: $light-green-600
-        box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $light-green-900
+        box-shadow: inset 0px 0px 0px , 0px 10px 0px 0px $light-green-900
 
         &:hover
-         box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $light-green-900
+         box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $light-green-900
 
         &:active
          box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $light-green-900
@@ -78,19 +78,23 @@
       width: 200px
       color: $black
       background-color: $yellow-500
-      box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $yellow-800
+      box-shadow: inset 0px 0px 0px , 0px 10px 0px 0px $yellow-800
       cursor: pointer
       margin-left: auto
       margin-right: auto
-      margin-bottom: 10px
+      margin-bottom: 15px
+      border-radius: 5px
 
       &:hover
-       box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $yellow-800
-       transform: translateY(2px)
+       box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $yellow-800
+       transform: translateY(6px)
+
+       & .facet-name
+          color: $red-900
 
       &:active
        box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $yellow-800
-       transform: translateY(5px)
+       transform: translateY(10px)
 
       & .facet-name
         display: block

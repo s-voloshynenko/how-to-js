@@ -1,6 +1,7 @@
 @import "./colors.sass"
 @import "./fonts.sass"
 @import "./grid.sass"
+@import "./buttons.sass"
 @import "./containers/index.sass"
 
 html, body, #root
@@ -10,3 +11,16 @@ html, body, #root
   height: 100%
   background: $white
   color: $white
+
+.page-transition-enter
+  transition: opacity .3s ease-in-out
+  opacity: 0
+  &.page-transition-enter-active
+    opacity: 1
+
+
+.page-transition-leave
+  transition: opacity .3s ease-in-out
+  opacity: 0
+  &.page-transition-leave-active
+    opacity: 0

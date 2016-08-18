@@ -25,10 +25,16 @@
   },
   "homepage": "https://github.com/s-voloshynenko/js-in-the-wild#readme",
   "dependencies": {
+    "es6-promise": "^3.2.1",
     "express": "^4.14.0",
+    "install": "^0.8.1",
+    "isomorphic-fetch": "^2.2.1",
+    "npm": "^3.10.6",
     "react": "^15.2.1",
+    "react-addons-css-transition-group": "^15.3.0",
     "react-dom": "^15.2.1",
-    "react-router": "^2.6.0"
+    "react-router": "^2.6.0",
+    "react-router-transitions": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",

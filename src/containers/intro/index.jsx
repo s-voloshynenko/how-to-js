@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Link } from 'react-router'
+
 export default class Intro extends Component {
   render() {
     return (
@@ -18,11 +20,11 @@ export default class Intro extends Component {
             `This is a place, that was created
             for the love of JavaScript. Make sure you know enough about JS.`
           }
-          <a href="/tree">
+          <Link to="/tree">
             <span className="intro-continue-btn">
               Continue..
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     )

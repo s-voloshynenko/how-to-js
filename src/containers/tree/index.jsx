@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router'
 import Facet from '../../components/facet/index.jsx';
 
 const Facets = {
@@ -50,7 +51,9 @@ export default class Tree extends Component {
       <div className="row horizontal-row">
             <div className="row facets-containter lvl-1">
               <div className="center-block" style={{width: '200px'}}>
-                <Facet data={Facets.Core} />
+                <Link to="/topics/core">
+                  <Facet data={Facets.Core} />
+                </Link>
               </div>
             </div>
             <div className="row facets-containter lvl-2">
