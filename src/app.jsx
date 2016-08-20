@@ -13,8 +13,8 @@ ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={Root}>
       <IndexRoute component={Intro} />
-      <Route path="tree" component={Tree} />
-      <Route path="topics/:name" component={Topics} />
+      <Route path="/tree" component={Tree} />
+      <Route path="/topics/:theme" component={Topics} />
     </Route>
   </Router>,
   document.getElementById('root')

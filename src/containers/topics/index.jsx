@@ -36,9 +36,14 @@ export default class Topics extends Component {
           </Link>
         </div>
         <div id="topics-container">
-          {this.state.topics.map((topic, i) => {
-            return <li key={i}> {topic.name} </li>; 
-          })}
+          <ul>
+            {this.state.topics.map((topic, i) => {
+              return <li key={i}>
+                      <span className="topic-num"> {i + 1} </span>
+                      <span className="topic-name"> {topic.name} </span>
+                     </li>; 
+            })}
+          </ul>
         </div>
       </div>
     )

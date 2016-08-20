@@ -2,3 +2,37 @@
   width: 100%
   height: 35px
   padding: 5px 0
+
+#topics-container
+  & ul
+   
+    & li
+      list-style-type: none
+
+      & span.topic-name
+        display: inline-block
+        height: 20px
+        padding: 5px
+        margin: 0 5px
+        background-color: $yellow-500
+        font-family: 'Black Ops One', cursive
+        text-transform: uppercase
+        text-align: center
+        line-height: 20px
+        border: none
+        border-radius: 5px
+        box-shadow: inset 0px 0px 0px , 0px 5px 0px 0px $yellow-800
+        cursor: pointer
+        color: $black
+
+        &:hover
+         box-shadow: inset 0px 0px 0px , 0px 3px 0px 0px $yellow-800
+         transform: translateY(2px)
+         color: $red-900
+
+        &:active
+         box-shadow: inset 0px 0px 0px , 0px 0px 0px 0px $yellow-800
+         transform: translateY(5px)
+
+   
+      & span.topic-num

@@ -2,6 +2,6 @@
 
 module.exports = (req, res) => {
   res.send([{
-    name: 'Topic 1'
+    name: 'Program life cycle in the JS.'
   }]);
 };
