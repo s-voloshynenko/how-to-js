@@ -1,5 +1,5 @@
 {
-  "name": "js-in-the-wild",
+  "name": "how-to-js",
   "version": "0.0.1",
   "description": "JavaScript in the wild",
   "main": "server.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s-voloshynenko/js-in-the-wild.git"
+    "url": "git+https://github.com/s-voloshynenko/how-to-js.git"
   },
   "keywords": [
     "JavaScript",
@@ -21,9 +21,9 @@
   "author": "Sergey Voloshynenko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/s-voloshynenko/js-in-the-wild/issues"
+    "url": "https://github.com/s-voloshynenko/how-to-js/issues"
   },
-  "homepage": "https://github.com/s-voloshynenko/js-in-the-wild#readme",
+  "homepage": "https://github.com/s-voloshynenko/how-to-js#readme",
   "dependencies": {
     "es6-promise": "^3.2.1",
     "express": "^4.14.0",

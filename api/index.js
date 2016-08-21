@@ -2,6 +2,6 @@
 
 var router = require('express').Router();
 
-router.get('/topics/:topicsName', require('./topics.js'));
+router.get('/topics/:theme', require('./topics.js'));
 
 module.exports = router;

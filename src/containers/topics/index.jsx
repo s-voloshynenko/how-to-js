@@ -15,12 +15,12 @@ export default class Topics extends Component {
   componentWillMount() {
     var self = this;
 
-    return fetchTopics('core')
-      .then((data) => {
-        if (!data.status) return browserHistory.push('/'); // TODO: 503 and 404 pages
+    return fetchTopics(self.props.params.theme)
+      .then((response) => {
+        if (response.status == 200) return browserHistory.push('/error/' + response.status);
 
         self.setState({
-          topics: data.topics
+          topics: response.data
         });
       });
   }
