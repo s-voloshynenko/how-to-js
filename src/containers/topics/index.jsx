@@ -17,7 +17,7 @@ export default class Topics extends Component {
 
     return fetchTopics(self.props.params.theme)
       .then((response) => {
-        if (response.status == 200) return browserHistory.push('/error/' + response.status);
+        if (response.status !== 200) return browserHistory.push('/error/' + response.status);
 
         self.setState({
           topics: response.data
