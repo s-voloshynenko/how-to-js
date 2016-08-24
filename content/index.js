@@ -8,5 +8,6 @@
  * 2. Available topics for relevant theme. (~25 themes x ~15 topics === crazy)
  */
 
-exports.topics = require('./topics');
+exports.themes = require('./themes');
 exports.facets = require('./facets');
+exports.topics = require('./topics');

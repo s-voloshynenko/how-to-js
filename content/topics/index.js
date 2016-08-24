@@ -1,1 +1,3 @@
-exports.core = require('./core.js');
+'use strict';
+
+exports.core = require('./core');
