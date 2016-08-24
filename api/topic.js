@@ -3,11 +3,12 @@
 var contentService = require('../lib/contentService');
 
 /**
- * Get topic by name
- * @param {String} name - topic's name
+ * Get topic by theme and number
+ * @param {String} theme - topic theme
+ * @param {Integer} num - topic num
  */
 module.exports = (req, res) => {
-  var topic = contentService.getTopic(req.params.name);
+  var topic = contentService.getTopic(req.params.theme, req.params.num);
 
   if (topic) return res.send(topic);
 

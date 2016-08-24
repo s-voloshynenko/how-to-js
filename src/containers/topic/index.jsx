@@ -9,14 +9,14 @@ export default class Topic extends Component {
 
     this.state = {
       topicContent: '',
-      referrer: this.props.referrer
+      theme: this.props.theme
     };
   }
 
   componentWillMount() {
     var self = this;
-
-    return fetchTopic(self.props.params.topic)
+    console.log('jere')
+    return fetchTopic(self.params.theme, self.props.params.id)
       .then((response) => {
         if (response.status !== 200) return browserHistory.push('/error/' + response.status);
 
@@ -30,7 +30,7 @@ export default class Topic extends Component {
     return (
       <div className="row">
         <div className="nav-bar">
-          <Link to={this.state.referrer}>
+          <Link to={'/topics/' + this.state.theme}>
             <span className="btn-back">
               Back
             </span>

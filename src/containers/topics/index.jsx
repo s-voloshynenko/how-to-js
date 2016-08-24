@@ -8,6 +8,7 @@ export default class Topics extends Component {
     super(props);
 
     this.state = {
+      theme: this.props.params.theme,
       topics: []
     };
   }
@@ -26,6 +27,8 @@ export default class Topics extends Component {
   }
 
   render() {
+    let { theme } = this.state;
+
     return (
       <div className="row">
         <div className="nav-bar">
@@ -38,10 +41,12 @@ export default class Topics extends Component {
         <div id="topics-container">
           <ul>
             {this.state.topics.map((topic, i) => {
-              return <li key={i}>
-                      <span className="topic-num"> {i + 1} </span>
-                      <span className="topic-name"> {topic.name} </span>
-                     </li>; 
+              return <Link to={'/topics/' + theme + '/' + (++i)}>
+                        <li key={topic}>
+                          <span className="topic-num"> {i} </span>
+                          <span className="topic-name"> {topic.name} </span>
+                        </li>
+                     </Link>;
             })}
           </ul>
         </div>

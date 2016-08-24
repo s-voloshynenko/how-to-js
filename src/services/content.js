@@ -12,9 +12,10 @@ function fetchTopics (theme) {
 }
 
 /**
- * Return topic by name
- * @param {String} name - topic name
+ * Return topic by theme and num
+ * @param {String} theme - topic theme
+ * @param {Integer} num - topic num
  */
-function fetchTopic (name) {
-  return requester('/api/topic/' + name);
+function fetchTopic (theme, num) {
+  return requester('/api/topics/' + theme + '/' + num);
 }
