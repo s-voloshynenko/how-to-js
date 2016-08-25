@@ -16,9 +16,8 @@ ReactDOM.render(
     <Route path="/" component={Root}>
       <IndexRoute component={Intro} />
       <Route path="tree" component={Tree} />
-      <Route path="topics/:theme" component={Topics} >
-        <Route path=":id" component={Topic} />
-      </Route>
+      <Route path="topics/:theme" component={Topics} />
+      <Route path="topics/:theme/:id" component={Topic} />
       <Route path="error/:code" component={Error} />
     </Route>
   </Router>,

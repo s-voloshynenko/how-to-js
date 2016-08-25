@@ -41,8 +41,8 @@ export default class Topics extends Component {
         <div id="topics-container">
           <ul>
             {this.state.topics.map((topic, i) => {
-              return <Link to={'/topics/' + theme + '/' + (++i)}>
-                        <li key={topic}>
+              return <Link key={i + Math.random() * 10000} to={'/topics/' + theme + '/' + (++i)}>
+                        <li>
                           <span className="topic-num"> {i} </span>
                           <span className="topic-name"> {topic.name} </span>
                         </li>
